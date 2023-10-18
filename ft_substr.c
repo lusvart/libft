@@ -6,7 +6,7 @@
 /*   By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 15:13:20 by luciafe2          #+#    #+#             */
-/*   Updated: 2023/10/11 14:57:46 by luciafe2         ###   ########.fr       */
+/*   Updated: 2023/10/16 15:43:41 by luciafe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,27 +32,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ft_strlcpy(substring, s + start, len + 1);
 	return (substring);
 }
-
-/*
-#include <stdio.h>
-int main(void)
-{
-    const char *original = "Esta_es_una_cadena_de_prueba";
-    unsigned int start = 5;
-    size_t len = 10;
-    char *result = ft_substr(original, start, len);
-    if (result != NULL)
-    {
-        printf("Cadena original: %s\n", original);
-        printf("Subcadena desde la posición %u con longitud %zu: %s\n", 
-			start, len, result);
-
-        // Liberar la memoria asignada
-        free(result);
-    }
-    else
-    {
-        printf("Error al obtener la subcadena.\n");
-    }
-    return 0;
-}*/

@@ -6,7 +6,7 @@
 /*   By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/23 12:32:58 by luciafe2          #+#    #+#             */
-/*   Updated: 2023/10/11 14:53:21 by luciafe2         ###   ########.fr       */
+/*   Updated: 2023/10/17 16:44:28 by luciafe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,16 +31,3 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t dstsize)
 	}
 	return (i);
 }
-
-/*
-#include <stdio.h>
-int main() {
-    char source[] = "Hello, world!";
-    char destination[10];
-
-size_t copied_length = ft_strlcpy(destination, source, sizeof(destination));
-
-    printf("Cadena copiada: %s\n", destination);
-    printf("Longitud de la cadena copiada: %zu\n", copied_length);
-    return 0;
-}*/

@@ -6,7 +6,7 @@
 /*   By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 16:08:00 by luciafe2          #+#    #+#             */
-/*   Updated: 2023/10/10 16:52:20 by luciafe2         ###   ########.fr       */
+/*   Updated: 2023/10/16 17:37:59 by luciafe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,3 @@ void	ft_putnbr_fd(int n, int fd)
 	else
 		ft_putchar_fd(n + '0', fd);
 }
-
-/*int main()
-{
-	ft_putnbr_fd(-2147483648, STDOUT_FILENO);
-	return(0);
-}*/

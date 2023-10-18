@@ -6,7 +6,7 @@
 /*   By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/25 16:55:28 by luciafe2          #+#    #+#             */
-/*   Updated: 2023/10/14 18:12:43 by luciafe2         ###   ########.fr       */
+/*   Updated: 2023/10/16 10:50:13 by luciafe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,14 +32,3 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-
-/*int	main()
-{
-	char source[] = "Hello, world!";
-    char destination[20];
-    ft_memcpy(destination, source, sizeof(source));
-    printf("Cadena copiada: %s\n", destination);
-    memcpy(destination, source, sizeof(source));
-    printf("Cadena copiada: %s\n", destination);
-    return (0);
-}*/

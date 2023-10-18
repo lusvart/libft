@@ -6,7 +6,7 @@
 /*   By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 10:53:30 by luciafe2          #+#    #+#             */
-/*   Updated: 2023/10/14 19:37:56 by luciafe2         ###   ########.fr       */
+/*   Updated: 2023/10/16 10:53:11 by luciafe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,15 +35,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
-
-/*
-int main ()
-{
-	char	str[];
-
-	str = "Hello Darkness";
-	ft_memmove(str + 6, str, 6);
-	printf("%s/n", str);
-	return (0);
-}
-*/

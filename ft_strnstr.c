@@ -6,7 +6,7 @@
 /*   By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/23 15:03:50 by luciafe2          #+#    #+#             */
-/*   Updated: 2023/10/11 14:56:31 by luciafe2         ###   ########.fr       */
+/*   Updated: 2023/10/16 13:09:16 by luciafe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,15 +38,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-
-/*
-//#include <stdio.h>
-//#include <string.h>
-int main()
-{
-	const char *hay = "Hello WoWorld!";
-	const char *ned = "World!";
-	char *sol = ft_strnstr(hay, ned, 15);
-	printf("%s\n", sol);
-	return 0;
-}*/

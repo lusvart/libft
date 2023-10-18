@@ -1,25 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/22 12:44:56 by luciafe2          #+#    #+#             */
-/*   Updated: 2023/10/17 16:42:35 by luciafe2         ###   ########.fr       */
+/*   Created: 2023/10/11 19:56:30 by luciafe2          #+#    #+#             */
+/*   Updated: 2023/10/17 16:43:45 by luciafe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(int c)
+int	ft_lstsize(t_list *lst)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+	size_t	i;
+
+	i = 0;
+	while (lst)
 	{
-		return (1);
+		i++;
+		lst = lst -> next;
 	}
-	else
-	{
-		return (0);
-	}
+	return (i);
 }

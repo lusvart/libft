@@ -6,7 +6,7 @@
 /*   By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/22 12:50:44 by luciafe2          #+#    #+#             */
-/*   Updated: 2023/10/11 15:55:22 by luciafe2         ###   ########.fr       */
+/*   Updated: 2023/10/16 10:43:24 by luciafe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,19 +21,3 @@ int	ft_isdigit(int c)
 		return (0);
 	}
 }
-
-/*
-#include <stdio.h>
-int	main()
-{
-	char character = '5';
-	if (ft_isdigit(character))
-	{
-		printf("%c es un dígito.\n", character);
-	}
-	else
-	{
-		printf("%c no es un dígito.\n", character);
-	}
-	return (0);
-}*/

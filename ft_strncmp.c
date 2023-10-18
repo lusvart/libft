@@ -6,7 +6,7 @@
 /*   By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/23 13:31:59 by luciafe2          #+#    #+#             */
-/*   Updated: 2023/10/14 17:27:16 by luciafe2         ###   ########.fr       */
+/*   Updated: 2023/10/16 11:46:18 by luciafe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,14 +30,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-
-/*
-#include <stdio.h>
-int main()
-{
-	char str1[] = "Hello,  U";
-	char str2[] = "Hello,  Universeee!";
-	int result = ft_strncmp(str1, str2, 10);
-	printf("la diferencia es %i\n", ft_strncmp(str1, str2, 10));
-}
-}*/

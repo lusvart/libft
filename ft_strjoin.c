@@ -6,7 +6,7 @@
 /*   By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 09:48:31 by luciafe2          #+#    #+#             */
-/*   Updated: 2023/10/11 14:52:11 by luciafe2         ###   ########.fr       */
+/*   Updated: 2023/10/17 16:44:16 by luciafe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,25 +35,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_strlcpy(join + len_s1, s2, len_s2 + 1);
 	return (join);
 }
-
-/*
-int main(void)
-{
-    // Ejemplo de uso de ft_strjoin
-    char const *s1 = "Hello, ";
-    char const *s2 = "world!";
-    char *result = ft_strjoin(s1, s2);
-    if (result != NULL)
-    {
-        printf("Cadena concatenada: %s\n", result);
-
-        // ¡No olvides liberar la memoria después de su uso!
-        free(result);
-    }
-    else
-    {
-        printf("Error al concatenar cadenas.\n");
-    }
-    return 0;
-}
-*/

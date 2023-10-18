@@ -6,7 +6,7 @@
 /*   By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 15:35:03 by luciafe2          #+#    #+#             */
-/*   Updated: 2023/10/11 14:49:11 by luciafe2         ###   ########.fr       */
+/*   Updated: 2023/10/16 17:37:28 by luciafe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,3 @@ void	ft_putendl_fd(char *s, int fd)
 	write (fd, s, len);
 	write(fd, "\n", 1);
 }
-
-/*int  main()
-{
-	char	str[] = "hello";
-	ft_putendl_fd(str, STDOUT_FILENO);
-	return (0);
-}*/

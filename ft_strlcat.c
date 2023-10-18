@@ -6,7 +6,7 @@
 /*   By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/23 12:32:33 by luciafe2          #+#    #+#             */
-/*   Updated: 2023/10/11 14:52:45 by luciafe2         ###   ########.fr       */
+/*   Updated: 2023/10/16 10:54:12 by luciafe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,17 +30,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		dst[i + j] = '\0';
 	return (i + ft_strlen(src));
 }
-
-/*
-#include <stdio.h>
-int main() {
-    char dst[24] = "Me da igual ";
-    char src[] = "tu función";
-
-    size_t result = ft_strlcat(dst, src, sizeof(dst));
-
-    printf("Concatenated String: %s\n", dst);
-    printf("Total Length: %zu\n", result);
-
-    return 0;
-}*/

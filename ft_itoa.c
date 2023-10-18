@@ -6,7 +6,7 @@
 /*   By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 12:06:15 by luciafe2          #+#    #+#             */
-/*   Updated: 2023/10/11 14:46:43 by luciafe2         ###   ########.fr       */
+/*   Updated: 2023/10/16 16:32:37 by luciafe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,27 +80,3 @@ char	*ft_itoa(int n)
 	convert_digits(result, n, len);
 	return (result);
 }
-
-/*#include <stdio.h>
-
-int main()
-{
-    int casos[] = {0, 123, -456, 7890, 2147483647, -2147483648};
-    size_t num_casos = sizeof(casos) / sizeof(casos[0]);
-    for (size_t i = 0; i < num_casos; i++)
-    {
-        int n = casos[i];
-        char *str = ft_itoa(n);
-
-        if (str)
-        {
-            printf("Número: %d, Cadena: %s\n", n, str);
-            free(str); // No olvides liberar la memoria asignada
-        }
-        else
-        {
-            printf("Error al convertir %d a cadena\n", n);
-        }
-    }
-    return (0);
-}*/

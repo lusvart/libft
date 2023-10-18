@@ -6,7 +6,7 @@
 /*   By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 17:39:42 by luciafe2          #+#    #+#             */
-/*   Updated: 2023/10/11 14:45:26 by luciafe2         ###   ########.fr       */
+/*   Updated: 2023/10/16 13:15:44 by luciafe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,12 +36,3 @@ int	ft_atoi(const char *str)
 	}
 	return (result * sign);
 }
-
-/*#include <stdio.h>
-int main(void)
-{
-    char str[] = "   ---+--+1234ab567";
-    int val = ft_atoi(str);
-    printf ("%d ", val);
-    return (0);
-}*/
