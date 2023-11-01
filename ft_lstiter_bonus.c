@@ -1,16 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstiter.c                                       :+:      :+:    :+:   */
+/*   ft_lstiter_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/18 11:44:39 by luciafe2          #+#    #+#             */
-/*   Updated: 2023/10/18 17:00:47 by luciafe2         ###   ########.fr       */
+/*   Created: 2023/10/19 15:13:21 by luciafe2          #+#    #+#             */
+/*   Updated: 2023/10/23 17:02:43 by luciafe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// It iterates list 'lst' and applies function 'f' to the content of each node.
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {

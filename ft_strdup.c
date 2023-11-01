@@ -6,11 +6,14 @@
 /*   By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 12:18:56 by luciafe2          #+#    #+#             */
-/*   Updated: 2023/10/16 15:41:31 by luciafe2         ###   ########.fr       */
+/*   Updated: 2023/10/23 16:36:07 by luciafe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// It creates a duplicate of an string by allocating memory for a new string
+// and coping the content of the original string into it.
 
 char	*ft_strdup(const char *s1)
 {

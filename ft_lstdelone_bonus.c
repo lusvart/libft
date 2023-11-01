@@ -1,31 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstclear.c                                      :+:      :+:    :+:   */
+/*   ft_lstdelone_bonus.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/18 10:43:45 by luciafe2          #+#    #+#             */
-/*   Updated: 2023/10/18 11:57:00 by luciafe2         ###   ########.fr       */
+/*   Created: 2023/10/18 09:52:47 by luciafe2          #+#    #+#             */
+/*   Updated: 2023/10/23 17:00:38 by luciafe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstclear(t_list **lst, void (*del)(void*))
-{
-	t_list	*current;
-	t_list	*next;
+// It frees the memory if a node ('lst') and its content using the provided 
+// 'del' function, without freeing the memory of the next pointer.
 
-	current = *lst;
+void	ft_lstdelone(t_list *lst, void (*del)(void*))
+{
 	if (lst == NULL || del == NULL)
-		return ;
-	while (current != NULL)
 	{
-		next = current -> next;
-		del(*current -> content);
-		free(current);
-		current = next;
+		return ;
 	}
-	*lst = NULL;
+	del((lst)->content);
+	free(lst);
+	lst = NULL;
 }

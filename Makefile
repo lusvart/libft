@@ -6,7 +6,7 @@
 #    By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/25 10:05:25 by amarroyo          #+#    #+#              #
-#    Updated: 2023/10/17 15:55:48 by luciafe2         ###   ########.fr        #
+#    Updated: 2023/10/20 11:23:19 by luciafe2         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,8 +24,6 @@ SRCS		=	ft_isalpha.c \
 				ft_memmove.c \
 				ft_strlcpy.c \
 				ft_strlcat.c \
-				ft_isupper.c \
-				ft_islower.c \
 				ft_toupper.c \
 				ft_tolower.c \
 				ft_strchr.c \
@@ -35,7 +33,6 @@ SRCS		=	ft_isalpha.c \
 				ft_memcmp.c \
 				ft_strnstr.c \
 				ft_atoi.c \
-				ft_isspace.c \
 				ft_calloc.c \
 				ft_strdup.c \
 				ft_substr.c \
@@ -50,7 +47,13 @@ SRCS		=	ft_isalpha.c \
 				ft_putendl_fd.c \
 				ft_putnbr_fd.c \
 
+SRC_BONUS = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c \
+			 ft_lstlast_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c \
+			 ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c \
+
 OBJS = ${SRCS:.c=.o}
+
+OBJ_BONUS = ${SRC_BONUS:.c=.o}
 
 CC		= gcc
 RM		= rm -f
@@ -63,12 +66,16 @@ CFLAGS = -Wall -Wextra -Werror
 $(NAME): ${OBJS}
 		ar rcs ${NAME} ${OBJS}
 
+bonus: $(OBJ_BONUS)
+	ar rcs $(NAME) $(OBJ_BONUS)
+
 all:	${NAME}
 
 clean:
 		${RM} ${OBJS}
 
 fclean:	clean
-		${RM} ${NAME}
+		${RM} ${NAME} ${OBJS} $(OBJ_BONUS)
 
 re:		fclean all
+

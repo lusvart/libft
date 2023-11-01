@@ -1,28 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
+/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/17 10:49:11 by luciafe2          #+#    #+#             */
-/*   Updated: 2023/10/18 13:04:20 by luciafe2         ###   ########.fr       */
+/*   Created: 2023/10/19 16:10:08 by luciafe2          #+#    #+#             */
+/*   Updated: 2023/10/23 16:55:24 by luciafe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_back(t_list **lst, t_list *new)
-{
-	t_list	*temp;
+// It creates a new node for linked lists. Using malloc.
 
-	temp = *lst;
-	if (*lst == NULL || new == NULL)
+t_list	*ft_lstnew(void *content)
+{
+	t_list	*new_node;
+
+	new_node = (t_list *)malloc(sizeof(t_list));
+	if (new_node != NULL)
 	{
-		*lst = new;
-		return ;
+		new_node -> content = content;
+		new_node -> next = NULL;
 	}
-	while ((temp -> next) != NULL)
-		temp = temp -> next;
-	temp -> next = new;
+	return (new_node);
 }

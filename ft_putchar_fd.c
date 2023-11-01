@@ -6,11 +6,13 @@
 /*   By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 13:18:41 by luciafe2          #+#    #+#             */
-/*   Updated: 2023/10/16 17:36:06 by luciafe2         ###   ########.fr       */
+/*   Updated: 2023/10/23 16:52:10 by luciafe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//It sends a character 'c' to the 'fd'.
 
 void	ft_putchar_fd(char c, int fd)
 {

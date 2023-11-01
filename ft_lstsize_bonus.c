@@ -1,22 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
+/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/11 19:47:08 by luciafe2          #+#    #+#             */
-/*   Updated: 2023/10/11 19:50:36 by luciafe2         ###   ########.fr       */
+/*   Created: 2023/10/19 15:14:05 by luciafe2          #+#    #+#             */
+/*   Updated: 2023/10/23 16:57:00 by luciafe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+// It calculates the size (number of nodes) in a linked list.
+
+int	ft_lstsize(t_list *lst)
 {
-	if (lst != NULL && new != NULL)
+	size_t	i;
+
+	i = 0;
+	while (lst)
 	{
-		new -> next = *lst;
-		*lst = new;
+		i++;
+		lst = lst -> next;
 	}
+	return (i);
 }

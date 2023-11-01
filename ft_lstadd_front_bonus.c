@@ -1,18 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isupper.c                                       :+:      :+:    :+:   */
+/*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luciafe2 <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/22 16:20:30 by luciafe2          #+#    #+#             */
-/*   Updated: 2023/09/22 16:20:34 by luciafe2         ###   ########.fr       */
+/*   Created: 2023/10/19 16:37:19 by luciafe2          #+#    #+#             */
+/*   Updated: 2023/10/23 16:56:16 by luciafe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isupper(int c)
+// Add a new node to the front of a linked list. 
+
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	return (c >= 'A' && c <= 'Z');
+	if (lst != NULL && new != NULL)
+	{
+		new -> next = *lst;
+		*lst = new;
+	}
 }

@@ -6,11 +6,13 @@
 /*   By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/25 16:04:05 by luciafe2          #+#    #+#             */
-/*   Updated: 2023/10/16 10:49:39 by luciafe2         ###   ########.fr       */
+/*   Updated: 2023/10/23 16:04:32 by luciafe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//wries 0n bytes to the string.
 
 void	ft_bzero(void *s, size_t n)
 {

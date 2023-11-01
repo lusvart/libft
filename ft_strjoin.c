@@ -6,11 +6,14 @@
 /*   By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 09:48:31 by luciafe2          #+#    #+#             */
-/*   Updated: 2023/10/17 16:44:16 by luciafe2         ###   ########.fr       */
+/*   Updated: 2023/10/23 16:41:04 by luciafe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// It takes 2 strings as input, concatenates them.
+// Returns a new string that is the concatenation of both. Null if alloc. fails.
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

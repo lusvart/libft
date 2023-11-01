@@ -6,11 +6,13 @@
 /*   By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/23 13:31:59 by luciafe2          #+#    #+#             */
-/*   Updated: 2023/10/16 11:46:18 by luciafe2         ###   ########.fr       */
+/*   Updated: 2023/10/23 16:20:21 by luciafe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// It compares the first 'n' chaar in two strings lexicographicaplly.
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

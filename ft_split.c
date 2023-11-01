@@ -6,11 +6,13 @@
 /*   By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 11:28:06 by luciafe2          #+#    #+#             */
-/*   Updated: 2023/10/16 17:10:23 by luciafe2         ###   ########.fr       */
+/*   Updated: 2023/10/23 16:43:26 by luciafe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// It divides an string using char 'c' as delimiter.
 
 static size_t	word_count(char const *s, char c)
 {
@@ -33,13 +35,12 @@ static size_t	word_count(char const *s, char c)
 	return (count);
 }
 
-static void	ft_free(int i, char *str)
+static void	ft_free(size_t i, char **str)
 {
-	i = 0;
-	while (str[i] != '\0')
+	while (i > 0)
 	{
-		free(str);
-		i++;
+		i--;
+		free(*(str + i));
 	}
 	free(str);
 }
@@ -56,7 +57,9 @@ static char	*extract_word(char const *s, char c, size_t *start)
 		end++;
 	word = ft_substr(s, *start, end - *start);
 	if (!word)
+	{
 		return (NULL);
+	}
 	*start = end;
 	return (word);
 }
@@ -81,7 +84,7 @@ char	**ft_split(char const *s, char c)
 		array[i] = extract_word(s, c, &start);
 		if (!array[i])
 		{
-			ft_free(i, *array);
+			ft_free(i, array);
 			return (NULL);
 		}
 		i++;

@@ -6,11 +6,14 @@
 /*   By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 20:01:47 by luciafe2          #+#    #+#             */
-/*   Updated: 2023/10/16 15:37:49 by luciafe2         ###   ########.fr       */
+/*   Updated: 2023/10/23 16:34:34 by luciafe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// It allocates and initializes memory for an array of elements, 
+//setting all bytes to 0.
 
 void	*ft_calloc(size_t count, size_t size)
 {

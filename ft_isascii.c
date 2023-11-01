@@ -6,11 +6,13 @@
 /*   By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/22 12:50:01 by luciafe2          #+#    #+#             */
-/*   Updated: 2023/10/16 10:45:59 by luciafe2         ###   ########.fr       */
+/*   Updated: 2023/10/23 15:46:48 by luciafe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// Test if 'c' is an ASCII character.
 
 int	ft_isascii(int c)
 {

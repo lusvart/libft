@@ -6,11 +6,13 @@
 /*   By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/22 12:50:44 by luciafe2          #+#    #+#             */
-/*   Updated: 2023/10/16 10:43:24 by luciafe2         ###   ########.fr       */
+/*   Updated: 2023/10/23 15:45:27 by luciafe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//test if 'c' is a number.
 
 int	ft_isdigit(int c)
 {

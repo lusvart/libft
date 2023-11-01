@@ -6,11 +6,15 @@
 /*   By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/23 12:32:33 by luciafe2          #+#    #+#             */
-/*   Updated: 2023/10/16 10:54:12 by luciafe2         ###   ########.fr       */
+/*   Updated: 2023/10/23 16:12:38 by luciafe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// Concatenate two strings with  a max. buffer length.
+// Preventing buffer overflows.
+// It returns the total length of the resulting string after concatenation.
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {

@@ -6,11 +6,14 @@
 /*   By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 12:09:58 by luciafe2          #+#    #+#             */
-/*   Updated: 2023/10/11 14:57:31 by luciafe2         ###   ########.fr       */
+/*   Updated: 2023/10/23 16:42:53 by luciafe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// It takes a string and a set of characters.
+// Returns the trimmed string with mem. allocation with malloc. Null if fails.
 
 char	*ft_strtrim(char const *s1, char const *set)
 {

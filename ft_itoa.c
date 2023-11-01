@@ -6,11 +6,14 @@
 /*   By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 12:06:15 by luciafe2          #+#    #+#             */
-/*   Updated: 2023/10/16 16:32:37 by luciafe2         ###   ########.fr       */
+/*   Updated: 2023/10/23 16:44:44 by luciafe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// It converts an integrer number in a char string, 
+// representing it's digits including the sing if it's negative.
 
 size_t	get_len(int n)
 {

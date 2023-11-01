@@ -6,11 +6,15 @@
 /*   By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 10:58:22 by luciafe2          #+#    #+#             */
-/*   Updated: 2023/10/16 17:44:38 by luciafe2         ###   ########.fr       */
+/*   Updated: 2023/10/23 17:08:19 by luciafe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// It takes a string 's' and function 'f' as parameters. It iterates over each
+// char of 's' and applies the function 'f' to each char.  It the uses the 
+// results to dynamically build a new string by allocating memory with malloc.
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

@@ -6,11 +6,13 @@
 /*   By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 10:53:30 by luciafe2          #+#    #+#             */
-/*   Updated: 2023/10/16 10:53:11 by luciafe2         ###   ########.fr       */
+/*   Updated: 2023/10/23 16:06:17 by luciafe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// Copies a memory block even if ther's overlapping (non-destructive).
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {

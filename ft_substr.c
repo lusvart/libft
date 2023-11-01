@@ -6,11 +6,15 @@
 /*   By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 15:13:20 by luciafe2          #+#    #+#             */
-/*   Updated: 2023/10/16 15:43:41 by luciafe2         ###   ########.fr       */
+/*   Updated: 2023/10/23 16:38:44 by luciafe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// It allocates and return a substring of the string 's' 
+// starting from index start with max. 'len' using malloc. 
+// Returns null if mem allocation fails.
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
