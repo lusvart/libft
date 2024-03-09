@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: luciafe2 <luciafe2@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/09/25 10:05:25 by amarroyo          #+#    #+#              #
-#    Updated: 2023/10/20 11:23:19 by luciafe2         ###   ########.fr        #
+#    Created: 2023/09/25 10:05:25 by luciafe2          #+#    #+#              #
+#    Updated: 2024/03/09 18:23:17 by luciafe2         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -61,10 +61,10 @@ RM		= rm -f
 CFLAGS = -Wall -Wextra -Werror
 
 .c.o:
-		${CC} ${CFLAGS} -g -c $< -o ${<:.c=.o}
+		${CC} ${CFLAGS} -g -c $< -o $@
 
 $(NAME): ${OBJS}
-		ar rcs ${NAME} ${OBJS}
+		ar rcs $@ ${OBJS}
 
 bonus: $(OBJ_BONUS)
 	ar rcs $(NAME) $(OBJ_BONUS)
@@ -72,7 +72,7 @@ bonus: $(OBJ_BONUS)
 all:	${NAME}
 
 clean:
-		${RM} ${OBJS}
+		${RM} ${OBJS} $(OBJ_BONUS)
 
 fclean:	clean
 		${RM} ${NAME} ${OBJS} $(OBJ_BONUS)
